@@ -1,0 +1,46 @@
+<!DOCTYPE html>    
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 1</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <div class="activity-header">
+        <button class="back-button">
+            Voltar
+        </button>
+    </div>
+
+    <div class="content-container">
+        <h1>Atividade 1</h1>
+        <p>Declaração com let:<br>
+        Crie uma variável let idade e atribua sua idade. Depois, atribua um novo valor representando a idade daqui a 5 anos. Mostre os dois valores no console: "Minha idade hoje é <idade> e daqui a 5 anos será <nova_idade>"</p>
+        
+        <div class="activity-card">
+            <h3>💬 Calculadora de Idade</h3>
+            
+            <div class="form-group">
+                <label for="idadeInput">Digite sua idade:</label>
+                <input 
+                    type="number" 
+                    id="idadeInput" 
+                    placeholder="Ex: 22" 
+                    min="0" 
+                    max="150"
+                    class="input-small"
+                    oninput="calcularIdade()"
+                >
+            </div>
+            
+            <div class="result-section">
+                <div id="resultado" class="result-display">Digite sua idade para ver o resultado</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>

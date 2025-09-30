@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 21</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <div class="activity-header">
+        <button class="back-button">
+            Voltar
+        </button>
+    </div>
+
+    <div class="content-container">
+        <h1>Atividade 21</h1>
+        <p>Escreva um programa para controlar uma fila de atendimento, deve guardar o nome da pessoa ao clicar no botão "entrar na fila" e inserir no final de uma fila. Quando a pessoa for atendida, deve clicar no botão "atender" que vai retirar o nome da pessoa que está no primeiro lugar na fila. Também guarde a data e hora que a pessoa entrou na fila (use Date.now() para obter essa informação. Veja como formatar a data usando Intl.DateTimeFormat).<br>
+        Quando ela for atendida (retirada da fila), deve calcular quanto tempo levou para ser atendida.<br>
+        Use vetores para armazenar as informações. Para inserir no final da fila use o método "push()" e para remover do início da fila use o método "shift()" . Crie um vetor para armazenar o nome e a hora (hora, minutos e segundos) que a pessoa entrou na fila. Em outro vetor armazene o nome, data e hora que pessoa entrou na fila, data e hora que foi atendida e quanto tempo demorou para ser atendida.
+        Cada vez que uma pessoa entrar na fila ou for atendida deve exibir os dados armazenados nos dois vetores.</p>
+        
+        <div class="activity-card">
+            <h3>Sistema de Controle de Fila</h3>
+            
+            <input 
+                type="text" 
+                id="nomeInput" 
+                placeholder="Digite o nome da pessoa" 
+                class="form-input mr-2"
+            >
+            <button 
+                data-action="entrarNaFila" 
+                class="btn btn-success mr-2">
+                Entrar na Fila
+            </button>
+            <button 
+                data-action="atenderPessoa" 
+                class="btn btn-warning">
+                Atender
+            </button>
+            
+            <div id="resultado" class="result-mono neutral">
+                Sistema carregado. Digite um nome e clique em "Entrar na Fila".
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
+
+

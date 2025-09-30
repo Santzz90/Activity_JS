@@ -1,0 +1,6 @@
+Refactor HTML and JavaScript for activities:
+- Added global event listeners for back buttons and action buttons in script.js.
+- Removed inline JavaScript from HTML files, replacing with data-action attributes for better separation of concerns.
+- Consolidated variable declarations and improved code structure in script.js.
+- Updated activity HTML files to enhance readability and maintainability.
+- Ensured all activities utilize the new event delegation approach for button actions.

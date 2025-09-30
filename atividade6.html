@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 6</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <div class="activity-header">
+        <button class="back-button">Voltar</button>
+    </div>
+
+    <div class="content-container">
+        <h1>Atividade 6</h1>
+        <p>	Número Par ou Ímpar:<br>
+	    Receba um número via prompt e use if/else para verificar se é par ou ímpar.</p>
+        
+        <div class="activity-card">
+            <h3>🔢 Verificador de Números Pares e Ímpares</h3>
+            
+            <div class="form-section">
+                <label for="numeroInput">Digite um número:</label>
+                <input 
+                    type="number" 
+                    id="numeroInput" 
+                    placeholder="Ex: 15" 
+                    step="1"
+                    class="ml-2 px-2 py-1 medium-input"
+                    oninput="verificarParImpar()"
+                >
+                <div id="resultado" class="result-dynamic neutral">
+                    Digite um número para ver o resultado
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>

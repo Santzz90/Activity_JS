@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 7</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <div class="activity-header">
+        <button 
+         
+        class="back-button">
+        Voltar
+        </button>
+    </div>
+
+    <div class="content-container">
+        <h1>Atividade 7</h1>
+        <p>	Nota de Aluno:	<br>
+	    Receba uma nota de 0 a 10.<br>
+	    o	>= 7: "Aprovado".<br>
+	    o	>= 5 e < 7: "Recuperação".<br>
+	    o	< 5: "Reprovado".</p>
+        
+        <div class="activity-card">
+            <h3>📝 Verificador de Notas</h3>
+            
+            <div class="form-section">
+                <label for="notaInput">Digite a nota (0 a 10):</label>
+                <input 
+                    type="number" 
+                    id="notaInput" 
+                    placeholder="Ex: 8.5" 
+                    min="0" 
+                    max="10" 
+                    step="0.1"
+                    class="ml-2 px-2 py-1 small-input"
+                    oninput="verificarNota()"
+                >
+                <div id="resultado" class="result-dynamic neutral">
+                    Digite uma nota para ver o resultado
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>

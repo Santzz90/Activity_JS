@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 5</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <div class="activity-header">
+        <button class="back-button">
+            Voltar
+        </button>
+    </div>
+
+    <div class="content-container">
+        <h1>Atividade 5</h1>
+        <p>	Verificação de Idade: <br>
+	    Peça ao usuário (com prompt) sua idade.<br>
+	    o	Se for menor que 12, mostre "Criança".<br>
+	    o	Se estiver entre 12 e 17, mostre "Adolescente".<br>
+	    o	Se for maior ou igual a 18, mostre "Adulto".</p>
+        
+        <div class="activity-card">
+            <h3>🎂 Classificador de Idade</h3>
+            
+            <div class="form-section">
+                <label for="idadeInput">Digite sua idade:</label>
+                <input 
+                    type="number" 
+                    id="idadeInput" 
+                    placeholder="Ex: 25" 
+                    min="0" 
+                    max="120"
+                    class="ml-2 px-2 py-1 small-input"
+                    oninput="verificarIdade()"
+                >
+                <div id="resultado" class="result-dynamic">
+                    Digite uma idade para ver a classificação
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>

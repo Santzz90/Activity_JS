@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 9</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <div class="activity-header">
+        <button 
+         
+        class="back-button">
+        Voltar
+        </button>
+    </div>
+
+    <div class="content-container">
+        <h1>Atividade 9</h1>
+        <p>Tabuada com for:<br>
+	    Receba um número e mostre a tabuada de 1 a 10 usando for.</p>
+        
+        <div class="activity-card">
+            <h3>🔢 Tabuada</h3>
+            
+            <div class="form-section">
+                <label for="numeroInput">Digite um número:</label>
+                <input 
+                    type="number" 
+                    id="numeroInput" 
+                    placeholder="Ex: 7" 
+                    class="ml-2 px-2 py-1 small-input"
+                    oninput="gerarTabuada()"
+                >
+                <div id="resultado" class="result-mono neutral">
+                    Digite um número para ver a tabuada
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
